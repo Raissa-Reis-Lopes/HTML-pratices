@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: rgb(245, 245, 245);
+        }
+        
+        header{
+            background: rgb(152, 220, 200);
+            border: solid;
+            text-align:center;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius:10px 0;
+            width: fit-content;
+        }
+
+        button{
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        main {
+  text-align: center;
+}
+
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 10px auto;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: fit-content;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input,
+select {
+  background-color: rgb(220, 240, 234);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+   margin: 10px auto;
+}
+
+.divForms{
+    display: flex;
+    border: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4ca3af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #4595a0;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #e6e6e6;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Exercício 8</h1>
+            <h3>A proposta desse exercício é desenvolver formulários interativos</h3>
+            <button><a href="exercicio_07.html">Anterior</a></button>
+        <button><a href="index.html">Voltar à tela inicial</a></button>
+        <button><a href="exercicio_09.html">Próximo</a></button>
+    </header>
+    <main>
+      <section>  
+      <fieldset>
+            <legend>Formulário de contato</legend>
+                <form >
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name">
+                    <label for="idade">Data de nascimento</label>
+                    <input type="date" id="idade">
+                    <label for="email">E-mail cadastrado</label>
+                    <input type="email" id="email">
+                    <label for="message">Escreva a sua mensagem</label>
+                    <input type="text" id="message">
+                    <label for="subject">Escolha um Assunto:</label>
+                    <select id="subject" name="subject">
+                        <option value="" disabled selected style="display:none;">Escolha um Assunto</option>
+                        <option value="info">Dúvidas</option>
+                        <option value="Elogio">Elogios</option>
+                        <option value="Reclamação">Reclamação</option>
+                        <option value="sac">SAC</option>
+                        <!-- Adicione mais opções conforme necessário -->
+                    </select>
+                    
+                    <legend>Você gostaria de receber as novidades em seu e-mail?</legend>
+                    <div class="divForms">
+                      <label><input type="radio" name="radio" value="yes" /> Sim</label>
+                      <label><input type="radio" name="radio" value="no" /> Não</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <h5>Raissa - Alpha EdTech 2023</h5>
+    </footer>
+</body>
+</html>

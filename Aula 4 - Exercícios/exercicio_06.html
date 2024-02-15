@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: rgb(245, 245, 245);
+        }
+        
+        header{
+            background: rgb(152, 220, 200);
+            border: solid;
+            text-align:center;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius:10px 0;
+            width: fit-content;
+        }
+
+        button{
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        main{
+            text-align:center;
+        }
+
+        section{
+            display: flex;
+        }
+        
+         div{
+            margin: 10px auto;
+            padding: 10px;
+            border-radius:10px;
+            width: fit-content;
+            border:solid rgb(152, 220, 200);;
+        }
+
+
+        ol{
+            text-align: left;
+
+            
+        }
+
+        ol>li{
+            padding: 5px 1px;    
+            list-style-type:upper-roman;
+        }
+
+        
+       ul>li:nth-child(odd) {
+        padding: 5px 1px; 
+        
+        list-style-type: circle;
+        text-align: justify;
+        }
+
+        ul>li:nth-child(even) {
+            padding: 5px 1px; 
+        list-style-type:square;
+        text-align: justify;
+        }
+
+        dl{
+            padding: 5px 1px; 
+        }
+        dl>dt{
+            background-color: rgb(152, 220, 200);
+            padding: 5px 1px; 
+            border-radius: 10px;
+        }
+
+        
+        footer {
+  text-align: center;
+  background-color: #e6e6e6;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício 6</h1>
+        <h3>A proposta desse exercício é criar diversos tipos de listas</h3>
+        <button><a href="index.html">Voltar à tela inicial</a></button>
+        <button><a href="exercicio_07.html">Próximo</a></button>
+    </header>
+    <main>
+        <h3>
+            Há três tipos de listas principais que podemos criar com o html, são as listas ordenadas, não ordenadas e de definição.
+        </h3>
+        <section >
+            <article>
+              
+
+                <div>                    
+                    <h4>Esta é uma lista ordenada</h4>
+                    <ol>
+                        <li>Vá reto por 500m</li>
+                        <li>Vire à direita</li>
+                        <li>Depois de 5km, vire à esquerda</li>
+                        <li>Siga em frente até localizar o restaurante</li>
+                        <li>Ele estará do seu lado direito</li>
+                    </ol>
+                </div>
+            <p>As listas ordenadas são usadas para representar itens em uma ordem específica (numerada ou alfabética). Cada item é precedido por um número ou uma letra.</p>
+        </article>
+        <article>    
+            <div>
+            <h4>Esta é uma lista não ordenada</h4>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </div>
+            <p>As listas não ordenadas são usadas para representar itens sem uma ordem específica. Cada item é precedido por um marcador de lista, geralmente um ponto.</p>
+    </article>
+    <article>
+        <div>           
+            <h4>Esta é uma lista de definição</h4>
+            <dl>
+                <dt>Lorem</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+                <dt>Lorem</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+                <dt>Lorem</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+            </dl>
+        </div>
+        <p>As listas não ordenadas são usadas para representar itens sem uma ordem específica. Cada item é precedido por um marcador de lista, geralmente um ponto.</p>
+    </article>
+        </section>
+            
+    </main>
+    <footer>
+        <h5>Raissa - Alpha EdTech 2023</h5>
+    </footer>
+</body>
+</html>

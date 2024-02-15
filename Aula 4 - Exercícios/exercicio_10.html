@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: rgb(245, 245, 245);
+        }
+        
+        header{
+            background: rgb(152, 220, 200);
+            border: solid;
+            text-align:center;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius:10px 0;
+            width: fit-content;
+        }
+
+        #divHeader{
+            display: flex;
+            border: none;
+        }
+
+        #gif{
+            width: 60px;
+            height: 60px;
+            margin: 0 30px 60px 0;
+            border-radius: 30px;
+        }
+
+        button{
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        main{
+            text-align:center;
+        }
+
+
+        #listas{
+            display: flex;
+        }
+        
+         div{
+            margin: 10px auto;
+            padding: 10px;
+            border-radius:10px;
+            width: fit-content;
+            border:solid rgb(152, 220, 200);;
+        }
+
+
+        ol{
+            text-align: left;
+
+            
+        }
+
+        ol>li{
+            padding: 5px 1px;    
+            list-style-type:upper-roman;
+        }
+
+        
+       ul>li:nth-child(odd) {
+        padding: 5px 1px; 
+        
+        list-style-type: circle;
+        text-align: justify;
+        }
+
+        ul>li:nth-child(even) {
+            padding: 5px 1px; 
+        list-style-type:square;
+        text-align: justify;
+        }
+
+        dl{
+            padding: 5px 1px; 
+        }
+        dl>dt{
+            background-color: rgb(152, 220, 200);
+            padding: 5px 1px; 
+            border-radius: 10px;
+        }
+
+        #tabelas{
+            border-top: solid black 2px;
+            border-bottom: solid black 2px;
+        }
+
+        #tabelas p {
+            color:crimson;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        table{
+            margin: 10px auto;
+            border: dashed black;
+            border-collapse: collapse;
+
+        }
+
+        thead{
+            background-color: rgb(152, 220, 200);
+        }
+        
+        td{
+            padding: 5px;
+            border: solid black;
+        }
+
+        tr:nth-child(even){
+            background-color: rgb(152, 220, 200);
+        }
+
+        #formulario{
+            margin: 30px auto;
+        }
+
+        
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 10px auto;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: fit-content;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input,
+select {
+  background-color: rgb(220, 240, 234);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+   margin: 10px auto;
+}
+
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4ca3af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #4595a0;
+}
+
+.divForms{
+    display: flex;
+    border: none;
+}
+
+      
+        footer {
+        text-align: center;
+        background-color: #e6e6e6;
+        padding: 10px;
+        bottom: 0;
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Exercício 10</h1>
+            <h3>A proposta desse exercício é realizar a integração de listas, tabelas e formulários</h3>
+            <button><a href="exercicio_09.html">Anterior</a></button>
+            <button><a href="index.html">Voltar à tela inicial</a></button>
+        </header>
+    <main>
+        <section id="listas"> 
+                <div>                    
+                    <h4>Esta é uma lista ordenada</h4>
+                    <ol>
+                        <li>Vá reto por 500m</li>
+                        <li>Vire à direita</li>
+                        <li>Depois de 5km, vire à esquerda</li>
+                        <li>Siga em frente até localizar o restaurante</li>
+                        <li>Ele estará do seu lado direito</li>
+                    </ol>
+                </div>    
+            <div>
+            <h4>Esta é uma lista não ordenada</h4>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </div>
+        <div>           
+            <h4>Esta é uma lista de definição</h4>
+            <dl>
+                <dt>Lorem</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+                <dt>Lorem</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+                <dt>Lorem</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+            </dl>
+        </div>    
+        </section>
+            
+        <section id="tabelas">
+            <p>Tabela com a média final dos alunos</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aluno</th>
+                        <th>Média Final</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>9.5</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>6</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Camila</td>
+                    <td>4.5</td>
+                    <td>Recuperação</td>
+                </tr>
+                <tr>
+                    <td>Marcelo</td>
+                    <td>2</td>
+                    <td>Reprovado</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Alunos em recuperação devem realizar o exame</td> 
+                    </tr>
+                </tfoot>
+            </tbody>
+        </table>
+    </section>
+    <section id="formulario">  
+        <fieldset>
+              <legend>Formulário de contato</legend>
+                  <form >
+                      <label for="name">Nome completo</label>
+                      <input type="text" id="name">
+                      <label for="idade">Data de nascimento</label>
+                      <input type="date" id="idade">
+                      <label for="email">E-mail cadastrado</label>
+                      <input type="email" id="email">
+                      <label for="message">Escreva a sua mensagem</label>
+                      <input type="text" id="message">
+                      <label for="subject">Escolha um Assunto:</label>
+                      <select id="subject" name="subject">
+                          <option value="" disabled selected style="display:none;">Escolha um Assunto</option>
+                          <option value="info">Dúvidas</option>
+                          <option value="Elogio">Elogios</option>
+                          <option value="Reclamação">Reclamação</option>
+                          <option value="sac">SAC</option>
+                          <!-- Adicione mais opções conforme necessário -->
+                      </select>
+                      <legend>Você gostaria de receber as novidades em seu e-mail?</legend>
+                      <div class="divForms">
+                        <label><input type="radio" name="radio" value="yes" /> Sim</label>
+                        <label><input type="radio" name="radio" value="no" /> Não</label>
+                      </div>
+                      
+                      <input type="submit" value="Enviar">
+                      <input type="reset" value="Limpar">
+                  </form>
+              </fieldset>
+          </section>
+            
+    </main>
+    <footer>
+        <h5>Raissa - Alpha EdTech 2023</h5>
+    </footer>
+</body>
+</html>

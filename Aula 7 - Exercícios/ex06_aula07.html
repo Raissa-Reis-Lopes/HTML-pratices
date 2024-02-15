@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 6</title>
+</head>
+<body>
+
+<canvas id="meuCanvas" width="400" height="200"></canvas>
+
+<script>
+const canvas = document.getElementById('meuCanvas');
+const contexto = canvas.getContext('2d');
+
+// Retângulo com borda vermelha e preenchimento verde
+contexto.fillStyle = 'green';
+contexto.strokeStyle = 'red';
+contexto.lineWidth = 2;
+
+contexto.fillRect(20, 20, 100, 50);
+contexto.strokeRect(20, 20, 100, 50);
+
+// Círculo azul com raio de 50 pixels
+contexto.beginPath();
+contexto.arc(250, 70, 50, 0, 2 * Math.PI);
+contexto.fillStyle = 'blue';
+contexto.fill();
+contexto.strokeStyle = 'blue';
+contexto.lineWidth = 2;
+contexto.stroke();
+
+</script>
+
+</body>
+</html>

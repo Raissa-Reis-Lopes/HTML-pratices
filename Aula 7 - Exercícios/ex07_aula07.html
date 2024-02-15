@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 7</title>
+</head>
+<body>
+
+<canvas id="meuCanvas" width="600" height="600"></canvas>
+
+<script>
+const canvas = document.getElementById('meuCanvas');
+const contexto = canvas.getContext('2d');
+
+// Estrela
+// Desenhar uma estrela usando caminhos complexos
+contexto.beginPath();
+contexto.moveTo(200, 50); 
+contexto.lineTo(237, 150); 
+contexto.lineTo(325, 150); 
+contexto.lineTo(262, 225); 
+contexto.lineTo(300, 320); 
+contexto.lineTo(200, 260);
+contexto.lineTo(100, 320); 
+contexto.lineTo(138, 225);
+contexto.lineTo(75, 150);
+contexto.lineTo(138 ,150);
+contexto.closePath(); // Conectar de volta ao ponto superior
+contexto.fillStyle = 'gold';
+contexto.fill();
+contexto.strokeStyle = 'orange';
+contexto.lineWidth = 2;
+contexto.stroke();
+
+
+//Coloquei dois olhinhos na estrela
+contexto.beginPath();
+contexto.arc(170, 120, 10, 0, 2 * Math.PI); // Olho esquerdo
+contexto.fillStyle = 'black';
+contexto.fill();
+
+contexto.beginPath();
+contexto.arc(175, 120, 3, 0, 2 * Math.PI); // Olho esquerdo
+contexto.fillStyle = 'white';
+contexto.fill();
+
+contexto.beginPath();
+contexto.arc(225, 120, 10, 0, 2 * Math.PI); // Olho direito
+contexto.fillStyle = 'black';
+contexto.fill();
+
+contexto.beginPath();
+contexto.arc(230, 120, 3, 0, 2 * Math.PI); // Olho esquerdo
+contexto.fillStyle = 'white';
+contexto.fill();
+
+contexto.beginPath();
+contexto.arc(200, 150, 30, 0.2 * Math.PI, 0.8 * Math.PI); // Arco para o sorriso
+contexto.strokeStyle = 'black';
+contexto.lineWidth = 2;
+contexto.stroke();
+
+
+// Forma aleatória para brincar com o desenho complexo
+contexto.beginPath();
+contexto.moveTo(400, 350); 
+contexto.lineTo(350, 450); 
+contexto.quadraticCurveTo(300, 50, 400, 150); 
+contexto.lineTo(450, 50); 
+contexto.bezierCurveTo(500, 150, 550, 150, 600, 50); 
+contexto.lineTo(650, 150); 
+contexto.lineTo(700, 50); 
+contexto.closePath(); 
+contexto.fillStyle = 'lightblue';
+contexto.fill();
+contexto.strokeStyle = 'blue';
+contexto.lineWidth = 2;
+contexto.stroke();
+
+</script>
+
+</body>
+</html>
