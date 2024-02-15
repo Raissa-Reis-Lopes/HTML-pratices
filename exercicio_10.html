@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: rgb(245, 245, 245);
+        }
+        
+        header{
+            background: rgb(152, 220, 200);
+            border: solid;
+            text-align:center;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius:10px 0;
+            width: fit-content;
+        }
+
+        button{
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        main{
+            text-align:center;
+        }
+
+
+        #sectionImage {
+            display: flex;
+            box-sizing: border-box;
+            margin: 20px 20px;
+        }
+
+
+        img {
+  max-width: 25%; /* Garante que as imagens não ultrapassem a largura do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaço extra abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem */
+  border-radius: 30%;
+}
+
+video {
+  width: 50%; 
+  height: auto; 
+  display: block; 
+  margin: 20px auto;
+}
+      
+        footer {
+        text-align: center;
+        background-color: #e6e6e6;
+        padding: 10px;
+        bottom: 0;
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Exercício 10</h1>
+            <h3>A proposta desse exercício é modelar uma página de produto que inclua imagens, vídeos demonstrativos e links para informações adicionais.</h3>
+            <button><a href="exercicio_09.html">Anterior</a></button>
+            <button><a href="index.html">Voltar à tela inicial</a></button>
+        </header>
+    <main>
+        <h3>Leve essas lindas orquídeas para iluminar o seu lar!</h3>
+        <section id="sectionImage">
+        <img
+        src="src/orchid/orchids-2055189_1280.jpg"
+        srcset="src/orchid/orchids-2055189_1280.jpg 480w,
+        src/orchid/orchids-2055189_1280.jpg 800w,
+        src/orchid/orchids-2055189_1280.jpg 1200w"
+        sizes="(max-width: 600px) 480px,
+               (max-width: 800px) 800px,
+               1200px"
+        alt="Orquídea branca com fundo preto"
+      >
+      <img
+      src="src/orchid/orchids-3778816_1280.jpg"
+      srcset="src/orchid/orchids-3778816_1280.jpg 480w,
+      src/orchid/orchids-3778816_1280.jpg 800w,
+      src/orchid/orchids-3778816_1280.jpg 1200w"
+      sizes="(max-width: 600px) 480px,
+             (max-width: 800px) 800px,
+             1200px"
+      alt="Orquídea laranja"
+    >
+    <img
+    src="src/orchid/orchids-4759196_640.jpg"
+    srcset="src/orchid/orchids-4759196_640.jpg 480w,
+    src/orchid/orchids-4759196_640.jpg 800w,
+    src/orchid/orchids-4759196_640.jpg 1200w"
+    sizes="(max-width: 600px) 480px,
+           (max-width: 800px) 800px,
+           1200px"
+    alt="Orquídea branca com fundo preto"
+  >
+        </section>
+        <h3>Para obter mais informações, baixe nosso <a href="./downloads/Manual orquídea.pdf" download="downloads/Manual orquídea.pdf"><span style="color: rgb(231, 65, 93);">
+          manual de cultivo
+        </span> </a>.</h3>
+
+       
+        <section id="sectionVideo">
+           
+            <video width="440" height="360" controls>
+                <source src="src/orchid_-_11207 (360p).mp4">
+            </video>
+        </section>
+       
+            
+    </main>
+    <footer>
+        <h5>Raissa - Alpha EdTech 2023</h5>
+    </footer>
+</body>
+</html>
